@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rompecabezas del Amor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Rompecabezas del Amor 💞</h1>
+
+    <section class="game-area">
+      <div class="board-container">
+        <canvas id="board" width="500" height="500"></canvas>
+      </div>
+      <div class="pieces-container" id="piecesContainer"></div>
+    </section>
+
+    <div class="controls">
+      <button id="shuffleBtn">🔀 Mezclar</button>
+      <button id="showBtn">🖼️ Mostrar Imagen</button>
+      <button id="resetBtn">🔄 Reiniciar</button>
+    </div>
+
+    <div class="audio-controls">
+      <audio id="bgAudio" loop preload="none">
+        <source src="music.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+      <button id="playAudio">▶️ Reproducir</button>
+      <button id="pauseAudio">⏸️ Pausar</button>
+    </div>
+
+    <div id="hearts"></div>
+    <div id="mensajeFinal" class="mensaje oculto"></div>
+
+    <footer class="attribution">
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
